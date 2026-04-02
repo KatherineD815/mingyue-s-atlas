@@ -46,7 +46,7 @@ const Index = () => {
                 About Me <ArrowRight size={14} />
               </Link>
             </div>
-            <div className="flex items-center gap-6 mt-14 opacity-0 animate-fade-in animate-delay-500">
+            <div className="flex items-center gap-6 mt-14 opacity-0 animate-fade-in animate-delay-400">
               <a href="https://www.linkedin.com/in/mingyuekd/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin size={17} /></a>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github size={17} /></a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Instagram size={17} /></a>
