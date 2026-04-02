@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Linkedin, Github, Instagram, Mail } from "lucide-react";
 import Layout from "@/components/Layout";
 import SalesforceIcon from "@/components/SalesforceIcon";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg-new.jpg";
 import portrait from "@/assets/portrait.jpg";
 import projectData from "@/assets/project-data.jpg";
 import projectGis from "@/assets/project-gis.jpg";

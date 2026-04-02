@@ -11,7 +11,7 @@ import hiking from "@/assets/hiking.jpg";
 import landscape1 from "@/assets/landscape-1.jpg";
 import landscape2 from "@/assets/landscape-2.jpg";
 import street1 from "@/assets/street-1.jpg";
-import heroBg from "@/assets/hero-bg.jpg";
+import coastline from "@/assets/coastline.jpg";
 import portrait from "@/assets/portrait.jpg";
 
 const categories = ["All", "Travel", "Cities", "Landscapes", "Street Moments"];
