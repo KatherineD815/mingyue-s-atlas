@@ -28,41 +28,41 @@ const Index = () => {
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full py-32">
           <div className="max-w-3xl">
-            <p className="text-[10px] font-sans font-normal tracking-[0.35em] uppercase text-primary/70 mb-6 opacity-0 animate-fade-in-up">
+            <p className="text-[10px] font-sans font-normal tracking-[0.35em] uppercase mb-6 animate-fade-in-up" style={{ color: 'rgba(143,127,159,0.7)' }}>
               investment · data analysis · spatial storytelling
             </p>
-            <p className="font-editorial text-lg md:text-xl text-muted-foreground mb-2 opacity-0 animate-fade-in-up animate-delay-100">
+            <p className="font-editorial text-lg md:text-xl mb-2 animate-fade-in-up animate-delay-100" style={{ color: '#5E5A5A' }}>
               Hello, I'm
             </p>
-            <h1 className="font-editorial text-5xl md:text-7xl lg:text-[5.5rem] text-foreground leading-[1.05] mb-4 opacity-0 animate-fade-in-up animate-delay-200">
+            <h1 className="font-editorial text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.05] mb-3 animate-fade-in-up animate-delay-200" style={{ color: '#3E3A35' }}>
               Mingyue (Katherine) Ding
             </h1>
-            <p className="text-base md:text-lg font-sans text-muted-foreground leading-relaxed max-w-xl mb-5 opacity-0 animate-fade-in-up animate-delay-300">
+            <p className="text-base md:text-lg font-sans leading-relaxed max-w-xl mb-4 animate-fade-in-up animate-delay-300" style={{ color: '#5E5A5A' }}>
               Bridging finance, policy, and impact — through data, cities, and systems thinking.
             </p>
-            <p className="text-sm font-sans leading-[1.85] max-w-[62ch] mb-4 opacity-0 animate-fade-in-up animate-delay-300" style={{ color: '#5E5A5A' }}>
+            <p className="text-sm font-sans leading-[1.85] max-w-[62ch] mb-4 animate-fade-in-up animate-delay-300" style={{ color: '#5E5A5A' }}>
               I'm Mingyue (Katherine) Ding — a graduate with a background across public policy, finance, and data. I work at the intersection of strategy, investment thinking, and spatial analysis, combining analytical rigor with real-world perspective.
             </p>
-            <p className="text-xs font-sans tracking-wide text-primary/70 mb-5 opacity-0 animate-fade-in-up animate-delay-300">
+            <p className="text-xs font-sans tracking-wide mb-4 animate-fade-in-up animate-delay-300" style={{ color: '#8F7F9F' }}>
               📍 Los Angeles · Open to global opportunities
             </p>
-            <div className="w-16 h-[1.5px] mb-8 opacity-0 animate-fade-in animate-delay-300" style={{ backgroundColor: 'rgba(143,127,159,0.3)' }} />
-            <div className="flex flex-wrap items-center gap-5 opacity-0 animate-fade-in-up animate-delay-400">
+            <div className="w-16 h-[1.5px] mb-7 animate-fade-in animate-delay-300" style={{ backgroundColor: 'rgba(143,127,159,0.3)' }} />
+            <div className="flex flex-wrap items-center gap-5 animate-fade-in-up animate-delay-400">
               <Link to="/portfolio" className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-sans font-medium tracking-wide transition-colors" style={{ backgroundColor: '#8F7F9F', color: '#F6F2EF', boxShadow: '0 2px 8px -2px rgba(143,127,159,0.35)' }}
                 onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#A899A8')}
                 onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#8F7F9F')}>
                 View Portfolio
               </Link>
-              <Link to="/about" className="inline-flex items-center gap-2 text-sm font-sans text-foreground hover:text-primary transition-colors tracking-wide">
+              <Link to="/about" className="inline-flex items-center gap-2 text-sm font-sans hover:text-primary transition-colors tracking-wide" style={{ color: '#5E5A5A' }}>
                 About Me <ArrowRight size={14} />
               </Link>
             </div>
-            <div className="flex items-center gap-5 mt-12 opacity-0 animate-fade-in animate-delay-500">
-              <a href="https://www.linkedin.com/in/mingyuekd/" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-primary transition-colors"><Linkedin size={17} /></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-primary transition-colors"><Github size={17} /></a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-primary transition-colors"><Instagram size={17} /></a>
-              <a href="https://www.salesforce.com/trailblazer/mingyuekd" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-primary transition-colors"><SalesforceIcon size={17} /></a>
-              <a href="mailto:mingyued@usc.edu" className="text-foreground/50 hover:text-primary transition-colors"><Mail size={17} /></a>
+            <div className="flex items-center gap-4 mt-10 animate-fade-in animate-delay-500">
+              <a href="https://www.linkedin.com/in/mingyuekd/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" style={{ color: 'rgba(62,58,53,0.6)' }}><Linkedin size={17} /></a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" style={{ color: 'rgba(62,58,53,0.6)' }}><Github size={17} /></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" style={{ color: 'rgba(62,58,53,0.6)' }}><Instagram size={17} /></a>
+              <a href="https://www.salesforce.com/trailblazer/mingyuekd" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors" style={{ color: 'rgba(62,58,53,0.6)' }}><SalesforceIcon size={17} /></a>
+              <a href="mailto:mingyued@usc.edu" className="hover:text-primary transition-colors" style={{ color: 'rgba(62,58,53,0.6)' }}><Mail size={17} /></a>
             </div>
           </div>
         </div>
