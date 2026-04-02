@@ -48,7 +48,7 @@ const About = () => {
         <div className="absolute inset-0">
           <img src={heroBg} alt="About background" width={1920} height={1080} className="w-full h-full object-cover opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.92), rgba(217,215,228,0.5))' }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.9), rgba(207,203,227,0.75))' }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <span className="text-xs font-sans font-medium tracking-[0.3em] uppercase text-primary mb-4 block">About</span>
