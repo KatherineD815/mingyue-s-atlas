@@ -22,16 +22,17 @@ const Index = () => {
       {/* Hero — Editorial personal intro */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, hsl(270 10% 93%) 0%, hsl(265 12% 91%) 40%, hsl(30 16% 94%) 100%)' }} />
+          <div className="absolute inset-0 bg-background" />
           <div className="absolute top-0 right-0 w-[55%] h-full hidden lg:block">
             <img src={heroBg} alt="Coastal city at golden hour" width={1920} height={1080} className="w-full h-full object-cover" />
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(217,215,228,1) 0%, rgba(217,215,228,0.92) 25%, rgba(217,215,228,0.5) 50%, rgba(168,153,168,0.25) 75%, transparent 100%)' }} />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,1) 0%, rgba(246,242,239,0.95) 30%, rgba(246,242,239,0.6) 50%, rgba(217,215,228,0.2) 70%, transparent 100%)' }} />
           </div>
           {/* Mobile: show image as full background */}
           <div className="absolute inset-0 lg:hidden">
             <img src={heroBg} alt="Coastal city at golden hour" width={1920} height={1080} className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(217,215,228,0.92), rgba(168,153,168,0.5))' }} />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.92), rgba(217,215,228,0.6))' }} />
           </div>
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full py-32">
