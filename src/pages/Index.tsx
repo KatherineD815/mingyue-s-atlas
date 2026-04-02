@@ -63,14 +63,13 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-5 lg:col-start-1">
               <div className="relative">
-                <img src={portrait} alt="Mingyue (Katherine) Ding" width={500} height={625} className="w-full max-w-[400px] aspect-[4/5] object-cover" />
+                <img src={portrait} alt="Mingyue (Katherine) Ding" width={500} height={625} className="w-full max-w-[360px] aspect-[4/5] object-cover" />
                 <div className="absolute -bottom-8 right-0 lg:-right-8 w-48 h-36 overflow-hidden opacity-80">
-                  <img src={cityBeijing} alt="Beijing — UN Resident Coordinator's Office, China" width={300} height={200} className="w-full h-full object-cover" />
+                  <img src={cityBeijing} alt="Beijing" width={300} height={200} className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute -bottom-10 -right-2 lg:-right-10 w-20 h-20 border-2 border-primary/15" />
-                <div className="mt-14 space-y-1">
-                  <p className="text-xs text-muted-foreground font-sans">Beijing — UN Resident Coordinator's Office, China</p>
-                  <p className="text-xs text-muted-foreground font-sans">Los Angeles — current base</p>
+                <div className="mt-14">
+                  <p className="text-xs text-muted-foreground font-sans">📍 Los Angeles</p>
                 </div>
               </div>
             </div>

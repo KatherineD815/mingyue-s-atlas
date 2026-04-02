@@ -227,24 +227,24 @@ a, button {
   background: linear-gradient(180deg, hsl(var(--sage)), hsl(var(--mauve)));
 }
 
-/* Tag color variants — lavender system */
+/* Tag color variants — richer lavender system */
 .tag-sage {
-  background: hsl(270 14% 93%);
-  color: hsl(280 8% 38%);
+  background: hsl(268 18% 90%);
+  color: hsl(270 14% 38%);
 }
 .tag-dusty-blue {
-  background: hsl(210 20% 92%);
-  color: hsl(210 18% 42%);
+  background: hsl(210 22% 89%);
+  color: hsl(210 20% 38%);
 }
 .tag-mauve {
-  background: hsl(280 14% 93%);
-  color: hsl(280 10% 45%);
+  background: hsl(275 18% 89%);
+  color: hsl(275 14% 40%);
 }
 .tag-blush {
-  background: hsl(270 12% 92%);
-  color: hsl(270 10% 42%);
+  background: hsl(265 16% 89%);
+  color: hsl(265 14% 38%);
 }
 .tag-coastal {
-  background: hsl(210 18% 90%);
-  color: hsl(210 16% 40%);
+  background: hsl(210 20% 87%);
+  color: hsl(210 18% 36%);
 }
