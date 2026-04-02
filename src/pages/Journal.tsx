@@ -174,11 +174,11 @@ const Journal = () => {
     }
   }, [activeTimelineIndex]);
 
-  const filteredArticles = articleTag === "All" ? articles : articles.filter(a => a.tags.includes(articleTag));
+  const filteredArticles = topTab === "Reflections" 
+    ? articles.filter(a => a.tags.includes("Reflections"))
+    : articles;
   const featured = filteredArticles.find(a => a.featured) || filteredArticles[0];
   const rest = filteredArticles.filter(a => a !== featured);
-
-  const filteredNotes = notesTag === "All" ? notes : notes.filter(n => n.tags.includes(notesTag));
 
   return (
     <Layout>
