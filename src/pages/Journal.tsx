@@ -214,30 +214,9 @@ const Journal = () => {
         </div>
       </section>
 
-      {/* ─── JOURNAL TAB ─── */}
-      {topTab === "Journal" && (
+      {/* ─── ALL / REFLECTIONS TAB ─── */}
+      {(topTab === "All" || topTab === "Reflections") && (
         <>
-          {/* Sub-tags */}
-          <section className="py-4 border-b border-border/50">
-            <div className="max-w-7xl mx-auto px-6 lg:px-8">
-              <div className="flex flex-wrap gap-3">
-                {articleTagOptions.map(tag => (
-                  <button
-                    key={tag}
-                    onClick={() => setArticleTag(tag)}
-                    className={`text-xs font-sans px-3 py-1.5 transition-all ${
-                      articleTag === tag
-                        ? "text-primary border-b border-primary font-medium"
-                        : "text-muted-foreground/70 hover:text-foreground"
-                    }`}
-                  >
-                    {tag}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </section>
-
           <section className="py-20">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
               {/* Featured */}
@@ -266,8 +245,8 @@ const Journal = () => {
 
               {/* Rest */}
               <div className="space-y-16">
-                {rest.map((article, i) => {
-                  if (i % 3 === 0 && rest[i + 1]) {
+                {filteredArticles.filter(a => a !== featured).map((article, i, arr) => {
+                  if (i % 3 === 0 && arr[i + 1]) {
                     return (
                       <div key={article.title} className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         <Link to="#" className="group block">
