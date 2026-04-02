@@ -43,7 +43,7 @@ const Index = () => {
             <p className="text-sm font-sans leading-[1.85] max-w-[62ch] mb-4 animate-fade-in-up animate-delay-300" style={{ color: '#5E5A5A' }}>
               I'm Mingyue (Katherine) Ding — a graduate with a background across public policy, finance, and data. I work at the intersection of strategy, investment thinking, and spatial analysis, combining analytical rigor with real-world perspective.
             </p>
-            <p className="text-xs font-sans tracking-wide mb-4 animate-fade-in-up animate-delay-300" style={{ color: '#8F7F9F' }}>
+            <p className="text-xs font-sans tracking-wide mb-4 animate-fade-in-up animate-delay-300" style={{ color: '#7A6F7E' }}>
               📍 Los Angeles · Open to global opportunities
             </p>
             <div className="w-16 h-[1.5px] mb-7 animate-fade-in animate-delay-300" style={{ backgroundColor: 'rgba(143,127,159,0.3)' }} />
