@@ -20,31 +20,37 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero — Editorial personal intro */}
-      <section className="relative min-h-screen flex items-center">
+      <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroBg} alt="Coastal city at golden hour" width={1920} height={1080} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.95), rgba(217,215,228,0.6))' }} />
+          <div className="absolute inset-0 bg-background" />
+          <div className="absolute top-0 right-0 w-[55%] h-full hidden lg:block">
+            <img src={heroBg} alt="Coastal city at golden hour" width={1920} height={1080} className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,1) 0%, rgba(246,242,239,0.95) 30%, rgba(246,242,239,0.6) 50%, rgba(217,215,228,0.2) 70%, transparent 100%)' }} />
+          </div>
+          {/* Mobile: show image as full background */}
+          <div className="absolute inset-0 lg:hidden">
+            <img src={heroBg} alt="Coastal city at golden hour" width={1920} height={1080} className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.92), rgba(217,215,228,0.6))' }} />
+          </div>
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full py-32">
-          <div className="max-w-3xl">
+          <div className="max-w-2xl">
             <p className="text-[10px] font-sans font-normal tracking-[0.35em] uppercase mb-6 animate-fade-in-up" style={{ color: 'rgba(122,111,126,0.7)' }}>
               investment · data analysis · spatial storytelling
             </p>
             <p className="font-editorial text-lg md:text-xl mb-2 animate-fade-in-up animate-delay-100" style={{ color: '#5E5A5A' }}>
               Hello, I'm
             </p>
-            <h1 className="font-editorial text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.05] mb-3 animate-fade-in-up animate-delay-200" style={{ color: '#3E3A35' }}>
+            <h1 className="font-editorial text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.05] mb-5 animate-fade-in-up animate-delay-200" style={{ color: '#3E3A35' }}>
               Mingyue (Katherine) Ding
             </h1>
-            <p className="text-base md:text-lg font-sans leading-relaxed max-w-xl mb-4 animate-fade-in-up animate-delay-300" style={{ color: '#5E5A5A' }}>
+            <p className="text-sm font-sans leading-[1.85] max-w-[62ch] mb-5 animate-fade-in-up animate-delay-300" style={{ color: '#5E5A5A' }}>
+              — a graduate with a background across economics & finance, public policy, and diplomacy. I work at the intersection of strategy, investment thinking, and spatial analysis, combining analytical rigor with real-world perspective.
+            </p>
+            <p className="text-base md:text-lg font-sans leading-relaxed max-w-xl mb-6 animate-fade-in-up animate-delay-300" style={{ color: '#5E5A5A' }}>
               Bridging finance, policy, and impact — through data, cities, and systems thinking.
-            </p>
-            <p className="text-sm font-sans leading-[1.85] max-w-[62ch] mb-4 animate-fade-in-up animate-delay-300" style={{ color: '#5E5A5A' }}>
-              I'm Mingyue (Katherine) Ding — a graduate with a background across public policy, finance, and data. I work at the intersection of strategy, investment thinking, and spatial analysis, combining analytical rigor with real-world perspective.
-            </p>
-            <p className="text-xs font-sans tracking-wide mb-4 animate-fade-in-up animate-delay-300" style={{ color: '#7A6F7E' }}>
-              📍 Los Angeles · Open to global opportunities
             </p>
             <div className="w-16 h-[1.5px] mb-7 animate-fade-in animate-delay-300" style={{ backgroundColor: 'rgba(122,111,126,0.3)' }} />
             <div className="flex flex-wrap items-center gap-5 animate-fade-in-up animate-delay-400">
