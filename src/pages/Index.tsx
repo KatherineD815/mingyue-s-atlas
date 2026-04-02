@@ -19,34 +19,37 @@ const tagColors = ["tag-sage", "tag-dusty-blue", "tag-mauve", "tag-blush", "tag-
 const Index = () => {
   return (
     <Layout>
-      {/* Hero — Full immersive editorial */}
-      <section className="relative min-h-screen flex items-end pb-20">
+      {/* Hero — Editorial personal intro */}
+      <section className="relative min-h-screen flex items-center">
         <div className="absolute inset-0">
           <img src={heroBg} alt="Coastal city at golden hour" width={1920} height={1080} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.9), rgba(207,203,227,0.75))' }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.92), rgba(217,215,228,0.78), rgba(187,199,212,0.65))' }} />
         </div>
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full py-32">
           <div className="max-w-3xl">
-            <h1 className="font-editorial text-5xl md:text-7xl lg:text-8xl text-foreground leading-[1.05] mb-8 opacity-0 animate-fade-in-up">
-              Bridging finance, policy, and impact — through data, cities, and{" "}
-              <em className="text-primary not-italic">systems thinking</em>.
-            </h1>
-            <div className="w-16 h-[1.5px] bg-primary mb-8 opacity-0 animate-fade-in animate-delay-100" />
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl opacity-0 animate-fade-in-up animate-delay-200">
-              I'm Mingyue (Katherine) Ding — a graduate with a background across public policy, finance, and data.
-              I work at the intersection of strategy, investment thinking, and spatial analysis, combining analytical
-              rigor with real-world perspective.
+            <p className="text-[10px] font-sans font-normal tracking-[0.35em] uppercase text-primary/60 mb-8 opacity-0 animate-fade-in-up">
+              investment · data analysis · spatial storytelling
             </p>
-            <div className="flex flex-wrap items-center gap-5 opacity-0 animate-fade-in-up animate-delay-300">
-              <Link to="/portfolio" className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground text-sm font-sans font-medium tracking-wide hover:opacity-90 transition-opacity">
+            <p className="font-editorial text-lg md:text-xl text-muted-foreground mb-3 opacity-0 animate-fade-in-up animate-delay-100">
+              Hello, I'm
+            </p>
+            <h1 className="font-editorial text-5xl md:text-7xl lg:text-[5.5rem] text-foreground leading-[1.05] mb-6 opacity-0 animate-fade-in-up animate-delay-200">
+              Mingyue (Katherine) Ding
+            </h1>
+            <p className="text-base md:text-lg font-sans text-muted-foreground leading-relaxed max-w-xl mb-10 opacity-0 animate-fade-in-up animate-delay-300">
+              Bridging finance, policy, and impact — through data, cities, and systems thinking.
+            </p>
+            <div className="w-16 h-[1.5px] bg-primary/40 mb-10 opacity-0 animate-fade-in animate-delay-300" />
+            <div className="flex flex-wrap items-center gap-5 opacity-0 animate-fade-in-up animate-delay-400">
+              <Link to="/portfolio" className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground text-sm font-sans font-medium tracking-wide hover:bg-accent transition-colors shadow-sm">
                 View Portfolio
               </Link>
               <Link to="/about" className="inline-flex items-center gap-2 text-sm font-sans text-foreground hover:text-primary transition-colors tracking-wide">
                 About Me <ArrowRight size={14} />
               </Link>
             </div>
-            <div className="flex items-center gap-6 mt-14 opacity-0 animate-fade-in animate-delay-400">
+            <div className="flex items-center gap-6 mt-14 opacity-0 animate-fade-in animate-delay-500">
               <a href="https://www.linkedin.com/in/mingyuekd/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin size={17} /></a>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github size={17} /></a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Instagram size={17} /></a>
