@@ -38,7 +38,7 @@ const Index = () => {
               I work at the intersection of strategy, investment thinking, and spatial analysis, combining analytical
               rigor with real-world perspective.
             </p>
-            <div className="flex flex-wrap items-center gap-5 opacity-0 animate-fade-in-up animate-delay-400">
+            <div className="flex flex-wrap items-center gap-5 opacity-0 animate-fade-in-up animate-delay-300">
               <Link to="/portfolio" className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground text-sm font-sans font-medium tracking-wide hover:opacity-90 transition-opacity">
                 View Portfolio
               </Link>
