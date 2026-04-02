@@ -24,7 +24,7 @@ const Index = () => {
         <div className="absolute inset-0">
           <img src={heroBg} alt="Coastal city at golden hour" width={1920} height={1080} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.92), rgba(217,215,228,0.85), rgba(168,153,168,0.70))' }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.95), rgba(217,215,228,0.6))' }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full py-32">
           <div className="max-w-3xl">
