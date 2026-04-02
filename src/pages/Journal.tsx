@@ -13,9 +13,6 @@ import coastline from "@/assets/coastline.jpg";
 import portrait from "@/assets/portrait.jpg";
 import projectUn from "@/assets/project-un.jpg";
 
-/* ── Journal article tags ── */
-const articleTagOptions = ["All", "Travel", "Hiking", "Reflections", "Maps", "Photography"];
-
 const tagColorMap: Record<string, string> = {
   Travel: "tag-blush",
   Hiking: "tag-dusty-blue",
