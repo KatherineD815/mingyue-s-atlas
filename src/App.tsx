@@ -7,8 +7,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Journal from "./pages/Journal";
-import PersonalStory from "./pages/PersonalStory";
-import NotesThinking from "./pages/NotesThinking";
+
 import CityAtlas from "./pages/CityAtlas";
 import Photography from "./pages/Photography";
 import Contact from "./pages/Contact";
