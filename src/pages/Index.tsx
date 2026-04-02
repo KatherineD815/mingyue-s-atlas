@@ -24,21 +24,19 @@ const Index = () => {
         <div className="absolute inset-0">
           <img src={heroBg} alt="Coastal city at golden hour" width={1920} height={1080} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.95), rgba(217,215,228,0.6))' }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.9), rgba(207,203,227,0.75))' }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="max-w-3xl">
-            <p className="text-xs font-sans font-medium tracking-[0.3em] uppercase text-primary mb-8 opacity-0 animate-fade-in-up">
-              Policy · Data · Spatial Storytelling
-            </p>
-            <h1 className="font-editorial text-5xl md:text-7xl lg:text-8xl text-foreground leading-[1.05] mb-8 opacity-0 animate-fade-in-up animate-delay-100">
+            <h1 className="font-editorial text-5xl md:text-7xl lg:text-8xl text-foreground leading-[1.05] mb-8 opacity-0 animate-fade-in-up">
               Bridging finance, policy, and impact — through data, cities, and{" "}
               <em className="text-primary not-italic">systems thinking</em>.
             </h1>
-            <div className="w-16 h-[1.5px] bg-primary mb-8 opacity-0 animate-fade-in animate-delay-200" />
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl opacity-0 animate-fade-in-up animate-delay-300">
-              I'm Mingyue (Katherine) Ding — a public policy researcher and spatial storyteller based in Los Angeles.
-              I combine economic analysis, GIS mapping, and editorial writing to understand how cities work.
+            <div className="w-16 h-[1.5px] bg-primary mb-8 opacity-0 animate-fade-in animate-delay-100" />
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl opacity-0 animate-fade-in-up animate-delay-200">
+              I'm Mingyue (Katherine) Ding — a graduate with a background across public policy, finance, and data.
+              I work at the intersection of strategy, investment thinking, and spatial analysis, combining analytical
+              rigor with real-world perspective.
             </p>
             <div className="flex flex-wrap items-center gap-5 opacity-0 animate-fade-in-up animate-delay-400">
               <Link to="/portfolio" className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground text-sm font-sans font-medium tracking-wide hover:opacity-90 transition-opacity">
