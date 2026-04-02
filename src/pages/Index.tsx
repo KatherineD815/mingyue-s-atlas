@@ -26,7 +26,7 @@ const Index = () => {
           <div className="absolute top-0 right-0 w-[55%] h-full hidden lg:block">
             <img src={heroBg} alt="Coastal city at golden hour" width={1920} height={1080} className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,1) 0%, rgba(246,242,239,0.7) 20%, rgba(217,215,228,0.3) 60%, transparent 100%)' }} />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,1) 0%, rgba(246,242,239,0.95) 30%, rgba(246,242,239,0.6) 50%, rgba(217,215,228,0.2) 70%, transparent 100%)' }} />
           </div>
           {/* Mobile: show image as full background */}
           <div className="absolute inset-0 lg:hidden">
