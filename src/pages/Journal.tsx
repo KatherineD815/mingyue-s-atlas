@@ -143,7 +143,7 @@ const notes = [
 ];
 
 /* ── Top-level tabs ── */
-const topTabs = ["Journal", "Personal Story", "Notes & Thinking"] as const;
+const topTabs = ["All", "Personal Story", "Notes & Thinking", "Reflections"] as const;
 type TopTab = typeof topTabs[number];
 
 /* ── Timeline Item Component ── */
