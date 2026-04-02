@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* Dusty lavender + coastal palette — richer purple identity */
+    /* Dusty lavender + coastal palette — soft editorial */
     --background: 25 22% 95%;
     --foreground: 30 6% 23%;
 
@@ -16,40 +16,40 @@
     --popover: 25 20% 97%;
     --popover-foreground: 30 6% 23%;
 
-    --primary: 270 14% 56%;
+    --primary: 270 10% 47%;
     --primary-foreground: 30 18% 96%;
 
-    --secondary: 260 14% 86%;
-    --secondary-foreground: 270 12% 28%;
+    --secondary: 260 12% 88%;
+    --secondary-foreground: 270 10% 30%;
 
-    --muted: 265 12% 91%;
-    --muted-foreground: 40 4% 42%;
+    --muted: 265 10% 92%;
+    --muted-foreground: 30 4% 42%;
 
-    --accent: 275 14% 65%;
+    --accent: 270 10% 58%;
     --accent-foreground: 30 6% 23%;
 
     --destructive: 0 60% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 265 10% 85%;
-    --input: 265 10% 85%;
-    --ring: 270 12% 56%;
+    --border: 265 8% 87%;
+    --input: 265 8% 87%;
+    --ring: 270 10% 47%;
 
     --radius: 0.5rem;
 
-    /* Extended palette — richer Morandi purple */
-    --sage: 270 14% 56%;
-    --sage-light: 268 16% 92%;
-    --dusty-blue: 210 18% 76%;
-    --dusty-blue-light: 210 20% 91%;
-    --mauve: 280 16% 62%;
-    --mauve-light: 270 18% 90%;
-    --blush: 265 16% 88%;
-    --taupe: 270 12% 45%;
+    /* Extended palette — soft Morandi lavender */
+    --sage: 270 10% 47%;
+    --sage-light: 268 14% 93%;
+    --dusty-blue: 210 16% 78%;
+    --dusty-blue-light: 210 18% 92%;
+    --mauve: 280 12% 58%;
+    --mauve-light: 270 14% 91%;
+    --blush: 265 14% 90%;
+    --taupe: 270 10% 42%;
     --ivory: 25 22% 96%;
-    --warm-gray: 270 12% 40%;
-    --coastal: 210 18% 84%;
-    --morning-haze: 260 16% 90%;
+    --warm-gray: 270 10% 38%;
+    --coastal: 210 16% 85%;
+    --morning-haze: 260 14% 91%;
 
     /* Sidebar */
     --sidebar-background: 25 20% 96%;

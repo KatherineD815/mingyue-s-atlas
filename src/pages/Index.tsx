@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Linkedin, Github, Instagram, Mail } from "lucide-react";
 import Layout from "@/components/Layout";
 import SalesforceIcon from "@/components/SalesforceIcon";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg-new.jpg";
 import portrait from "@/assets/portrait.jpg";
 import projectData from "@/assets/project-data.jpg";
 import projectGis from "@/assets/project-gis.jpg";
@@ -24,11 +24,11 @@ const Index = () => {
         <div className="absolute inset-0">
           <img src={heroBg} alt="Coastal city at golden hour" width={1920} height={1080} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.92), rgba(217,215,228,0.85), rgba(168,153,168,0.70))' }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.95), rgba(217,215,228,0.6))' }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full py-32">
           <div className="max-w-3xl">
-            <p className="text-[10px] font-sans font-normal tracking-[0.35em] uppercase mb-6 animate-fade-in-up" style={{ color: 'rgba(143,127,159,0.7)' }}>
+            <p className="text-[10px] font-sans font-normal tracking-[0.35em] uppercase mb-6 animate-fade-in-up" style={{ color: 'rgba(122,111,126,0.7)' }}>
               investment · data analysis · spatial storytelling
             </p>
             <p className="font-editorial text-lg md:text-xl mb-2 animate-fade-in-up animate-delay-100" style={{ color: '#5E5A5A' }}>
@@ -43,14 +43,14 @@ const Index = () => {
             <p className="text-sm font-sans leading-[1.85] max-w-[62ch] mb-4 animate-fade-in-up animate-delay-300" style={{ color: '#5E5A5A' }}>
               I'm Mingyue (Katherine) Ding — a graduate with a background across public policy, finance, and data. I work at the intersection of strategy, investment thinking, and spatial analysis, combining analytical rigor with real-world perspective.
             </p>
-            <p className="text-xs font-sans tracking-wide mb-4 animate-fade-in-up animate-delay-300" style={{ color: '#8F7F9F' }}>
+            <p className="text-xs font-sans tracking-wide mb-4 animate-fade-in-up animate-delay-300" style={{ color: '#7A6F7E' }}>
               📍 Los Angeles · Open to global opportunities
             </p>
-            <div className="w-16 h-[1.5px] mb-7 animate-fade-in animate-delay-300" style={{ backgroundColor: 'rgba(143,127,159,0.3)' }} />
+            <div className="w-16 h-[1.5px] mb-7 animate-fade-in animate-delay-300" style={{ backgroundColor: 'rgba(122,111,126,0.3)' }} />
             <div className="flex flex-wrap items-center gap-5 animate-fade-in-up animate-delay-400">
-              <Link to="/portfolio" className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-sans font-medium tracking-wide transition-colors" style={{ backgroundColor: '#8F7F9F', color: '#F6F2EF', boxShadow: '0 2px 8px -2px rgba(143,127,159,0.35)' }}
-                onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#A899A8')}
-                onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#8F7F9F')}>
+              <Link to="/portfolio" className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-sans font-medium tracking-wide transition-colors" style={{ backgroundColor: '#7A6F7E', color: '#F6F2EF', boxShadow: '0 2px 8px -2px rgba(122,111,126,0.35)' }}
+                onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#A89BA8')}
+                onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#7A6F7E')}>
                 View Portfolio
               </Link>
               <Link to="/about" className="inline-flex items-center gap-2 text-sm font-sans hover:text-primary transition-colors tracking-wide" style={{ color: '#5E5A5A' }}>

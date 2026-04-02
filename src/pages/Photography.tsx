@@ -11,13 +11,13 @@ import hiking from "@/assets/hiking.jpg";
 import landscape1 from "@/assets/landscape-1.jpg";
 import landscape2 from "@/assets/landscape-2.jpg";
 import street1 from "@/assets/street-1.jpg";
-import heroBg from "@/assets/hero-bg.jpg";
+import coastline from "@/assets/coastline.jpg";
 import portrait from "@/assets/portrait.jpg";
 
 const categories = ["All", "Travel", "Cities", "Landscapes", "Street Moments"];
 
 const photos = [
-  { src: heroBg, alt: "Coastal city aerial", category: "Cities" },
+  { src: coastline, alt: "Coastal cliffs at golden hour", category: "Landscapes" },
   { src: landscape1, alt: "Mountain lake sunset", category: "Landscapes" },
   { src: cityLA, alt: "Los Angeles neighborhoods", category: "Cities" },
   { src: hiking, alt: "Misty mountain trail", category: "Landscapes" },
@@ -47,7 +47,7 @@ const Photography = () => {
       {/* Hero */}
       <section className="relative min-h-[40vh] flex items-end pb-16">
         <div className="absolute inset-0">
-          <img src={landscape1} alt="Photography" width={1920} height={1080} className="w-full h-full object-cover opacity-30" />
+          <img src={coastline} alt="Coastline" width={1920} height={1080} className="w-full h-full object-cover opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/30" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
