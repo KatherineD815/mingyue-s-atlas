@@ -1,9 +1,11 @@
-import { Download, MapPin } from "lucide-react";
+import { Download, MapPin, Linkedin, Github, Instagram, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
+import SalesforceIcon from "@/components/SalesforceIcon";
 import portrait from "@/assets/portrait.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
+import cityBeijing from "@/assets/city-beijing.jpg";
 
 const skills = [
   { category: "Data & Analysis", items: ["Python (Pandas, NumPy, Scikit-learn)", "R (ggplot2)", "Stata", "Matlab", "Power BI", "Tableau"] },
@@ -11,7 +13,16 @@ const skills = [
   { category: "Research & Writing", items: ["Policy Analysis", "Macroeconomic Research", "Academic Writing", "Speechwriting", "Content Strategy"] },
   { category: "Tools & Platforms", items: ["Bloomberg", "Salesforce", "SharePoint", "Microsoft Office", "Think-cell", "Copilot"] },
   { category: "Languages", items: ["English (fluent)", "Mandarin (native)", "Spanish (intermediate)", "French (basic)"] },
-  { category: "Certifications", items: ["CFA ESG Investing", "Bloomberg ESG", "UN SDG Certificate", "HubSpot Content Marketing", "Salesforce Associate"] },
+  {
+    category: "Certifications",
+    items: [
+      { label: "CFA ESG Investing", url: "https://www.cfainstitute.org/en/programs/esg-investing" },
+      { label: "Bloomberg ESG", url: "https://www.bloomberg.com/professional/product/bloomberg-terminal/" },
+      { label: "UN SDG Certificate", url: "https://www.unssc.org/courses/2030-agenda-sustainable-development" },
+      { label: "HubSpot Content Marketing", url: "https://academy.hubspot.com/courses/content-marketing" },
+      { label: "Salesforce Associate", url: "https://trailhead.salesforce.com/en/credentials/salesforceassociate" },
+    ],
+  },
 ];
 
 const experience = [
@@ -37,26 +48,37 @@ const About = () => {
         <div className="absolute inset-0">
           <img src={heroBg} alt="About background" width={1920} height={1080} className="w-full h-full object-cover opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.92), rgba(217,215,228,0.5))' }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <span className="text-xs font-sans font-medium tracking-[0.3em] uppercase text-primary mb-4 block">About</span>
           <h1 className="font-editorial text-4xl md:text-6xl lg:text-7xl text-foreground leading-tight">
-            Hello, I'm Katherine
+            Hello, I'm Mingyue (Katherine)
           </h1>
         </div>
       </section>
 
-      {/* Bio — asymmetric layout */}
+      {/* Bio — asymmetric layout with layered images */}
       <section className="py-28 gradient-warm-neutral">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             <div className="lg:col-span-5">
               <div className="relative sticky top-24">
-                <img src={portrait} alt="Katherine Ding" width={600} height={750} className="w-full aspect-[4/5] object-cover" />
-                <div className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-primary/20" />
-                <div className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
-                  <MapPin size={14} className="text-primary" />
-                  <span className="font-sans">Los Angeles, CA · USC Sol Price School</span>
+                <img src={portrait} alt="Mingyue (Katherine) Ding" width={500} height={625} className="w-full max-w-[380px] aspect-[4/5] object-cover" />
+                <div className="absolute -bottom-8 right-0 lg:-right-6 w-44 h-32 overflow-hidden opacity-80 shadow-md">
+                  <img src={cityBeijing} alt="Beijing" width={300} height={200} className="w-full h-full object-cover" />
+                </div>
+                <div className="absolute -bottom-10 -right-2 lg:-right-8 w-20 h-20 border-2 border-primary/15" />
+                <div className="mt-14 space-y-1">
+                  <p className="text-xs text-muted-foreground font-sans">Beijing — UN Resident Coordinator's Office, China</p>
+                  <p className="text-xs text-muted-foreground font-sans">Los Angeles — current base</p>
+                </div>
+                <div className="flex items-center gap-5 mt-6">
+                  <a href="https://www.linkedin.com/in/mingyuekd/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin size={16} /></a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github size={16} /></a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Instagram size={16} /></a>
+                  <a href="https://www.salesforce.com/trailblazer/mingyuekd" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><SalesforceIcon size={16} /></a>
+                  <a href="mailto:mingyued@usc.edu" className="text-muted-foreground hover:text-primary transition-colors"><Mail size={16} /></a>
                 </div>
               </div>
             </div>
@@ -90,7 +112,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Skills — editorial grid */}
+      {/* Skills — editorial grid with clickable certifications */}
       <section className="py-28 gradient-to-mauve">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <span className="text-xs font-sans font-medium tracking-[0.3em] uppercase text-primary mb-4 block">Skills & Tools</span>
@@ -100,9 +122,22 @@ const About = () => {
               <div key={group.category} className="border-t border-border pt-6">
                 <h3 className="font-sans text-xs font-medium tracking-[0.2em] uppercase text-primary mb-5">{group.category}</h3>
                 <div className="flex flex-wrap gap-2">
-                  {group.items.map((item, ii) => (
-                    <span key={item} className={`text-sm font-sans px-3 py-1.5 ${tagColors[(gi + ii) % tagColors.length]}`}>{item}</span>
-                  ))}
+                  {group.category === "Certifications"
+                    ? (group.items as { label: string; url: string }[]).map((item, ii) => (
+                        <a
+                          key={item.label}
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`text-sm font-sans px-3 py-1.5 ${tagColors[(gi + ii) % tagColors.length]} hover:opacity-75 transition-opacity cursor-pointer underline-offset-2 hover:underline`}
+                        >
+                          {item.label}
+                        </a>
+                      ))
+                    : (group.items as string[]).map((item, ii) => (
+                        <span key={item} className={`text-sm font-sans px-3 py-1.5 ${tagColors[(gi + ii) % tagColors.length]}`}>{item}</span>
+                      ))
+                  }
                 </div>
               </div>
             ))}
