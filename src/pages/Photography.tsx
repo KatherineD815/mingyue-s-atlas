@@ -47,7 +47,7 @@ const Photography = () => {
       {/* Hero */}
       <section className="relative min-h-[40vh] flex items-end pb-16">
         <div className="absolute inset-0">
-          <img src={landscape1} alt="Photography" width={1920} height={1080} className="w-full h-full object-cover opacity-30" />
+          <img src={coastline} alt="Coastline" width={1920} height={1080} className="w-full h-full object-cover opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/30" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
