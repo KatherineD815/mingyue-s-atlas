@@ -48,9 +48,9 @@ const Index = () => {
             </p>
             <div className="w-16 h-[1.5px] mb-7 animate-fade-in animate-delay-300" style={{ backgroundColor: 'rgba(122,111,126,0.3)' }} />
             <div className="flex flex-wrap items-center gap-5 animate-fade-in-up animate-delay-400">
-              <Link to="/portfolio" className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-sans font-medium tracking-wide transition-colors" style={{ backgroundColor: '#8F7F9F', color: '#F6F2EF', boxShadow: '0 2px 8px -2px rgba(143,127,159,0.35)' }}
-                onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#A899A8')}
-                onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#8F7F9F')}>
+              <Link to="/portfolio" className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-sans font-medium tracking-wide transition-colors" style={{ backgroundColor: '#7A6F7E', color: '#F6F2EF', boxShadow: '0 2px 8px -2px rgba(122,111,126,0.35)' }}
+                onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#A89BA8')}
+                onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#7A6F7E')}>
                 View Portfolio
               </Link>
               <Link to="/about" className="inline-flex items-center gap-2 text-sm font-sans hover:text-primary transition-colors tracking-wide" style={{ color: '#5E5A5A' }}>
