@@ -86,7 +86,7 @@ const Index = () => {
                 </div>
                 <div className="absolute -bottom-10 -right-2 lg:-right-10 w-20 h-20 border-2 border-primary/15" />
                 <div className="mt-14">
-                  <p className="text-xs text-muted-foreground font-sans">📍 Los Angeles</p>
+                  <p className="text-xs text-muted-foreground font-sans">📍 Los Angeles · Open to global opportunities</p>
                 </div>
               </div>
             </div>
