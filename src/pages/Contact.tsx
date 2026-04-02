@@ -1,5 +1,5 @@
-import { Mail, Linkedin, Github, Instagram, MapPin, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Mail, Linkedin, Github, Instagram, MapPin } from "lucide-react";
+import SalesforceIcon from "@/components/SalesforceIcon";
 import Layout from "@/components/Layout";
 
 const Contact = () => {
@@ -24,50 +24,39 @@ const Contact = () => {
               </div>
 
               <div className="space-y-0">
-                <a
-                  href="mailto:mingyued@usc.edu"
-                  className="flex items-center gap-4 py-5 border-b border-border hover:bg-muted/20 transition-colors px-4 -mx-4 group"
-                >
+                <a href="mailto:mingyued@usc.edu" className="flex items-center gap-4 py-5 border-b border-border hover:bg-muted/20 transition-colors px-4 -mx-4 group">
                   <Mail size={18} className="text-primary shrink-0" />
                   <div>
                     <p className="text-sm font-sans font-medium text-foreground group-hover:text-primary transition-colors">Email</p>
                     <p className="text-xs text-muted-foreground">mingyued@usc.edu</p>
                   </div>
                 </a>
-                <a
-                  href="https://www.linkedin.com/in/mingyuekd/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 py-5 border-b border-border hover:bg-muted/20 transition-colors px-4 -mx-4 group"
-                >
+                <a href="https://www.linkedin.com/in/mingyuekd/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 py-5 border-b border-border hover:bg-muted/20 transition-colors px-4 -mx-4 group">
                   <Linkedin size={18} className="text-primary shrink-0" />
                   <div>
                     <p className="text-sm font-sans font-medium text-foreground group-hover:text-primary transition-colors">LinkedIn</p>
                     <p className="text-xs text-muted-foreground">linkedin.com/in/mingyuekd</p>
                   </div>
                 </a>
-                <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 py-5 border-b border-border hover:bg-muted/20 transition-colors px-4 -mx-4 group"
-                >
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 py-5 border-b border-border hover:bg-muted/20 transition-colors px-4 -mx-4 group">
                   <Github size={18} className="text-primary shrink-0" />
                   <div>
                     <p className="text-sm font-sans font-medium text-foreground group-hover:text-primary transition-colors">GitHub</p>
                     <p className="text-xs text-muted-foreground">github.com/katherine</p>
                   </div>
                 </a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 py-5 border-b border-border hover:bg-muted/20 transition-colors px-4 -mx-4 group"
-                >
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 py-5 border-b border-border hover:bg-muted/20 transition-colors px-4 -mx-4 group">
                   <Instagram size={18} className="text-primary shrink-0" />
                   <div>
                     <p className="text-sm font-sans font-medium text-foreground group-hover:text-primary transition-colors">Instagram</p>
                     <p className="text-xs text-muted-foreground">@katherine.ding</p>
+                  </div>
+                </a>
+                <a href="https://www.salesforce.com/trailblazer/mingyuekd" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 py-5 border-b border-border hover:bg-muted/20 transition-colors px-4 -mx-4 group">
+                  <SalesforceIcon size={18} className="text-primary shrink-0" />
+                  <div>
+                    <p className="text-sm font-sans font-medium text-foreground group-hover:text-primary transition-colors">Salesforce Trailblazer</p>
+                    <p className="text-xs text-muted-foreground">salesforce.com/trailblazer/mingyuekd</p>
                   </div>
                 </a>
               </div>

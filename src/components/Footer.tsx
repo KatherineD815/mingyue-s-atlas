@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Github, Instagram, Mail } from "lucide-react";
+import SalesforceIcon from "@/components/SalesforceIcon";
 
 const Footer = () => {
   return (
@@ -7,14 +8,15 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-5">
-            <h3 className="font-editorial text-2xl mb-4 text-foreground">Katherine Ding</h3>
+            <h3 className="font-editorial text-2xl mb-4 text-foreground">Mingyue (Katherine) Ding</h3>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
-              Researching places, people, and policy through data, maps, and stories.
+              Bridging finance, policy, and impact through data, cities, and systems thinking.
             </p>
             <div className="flex gap-5 mt-6">
               <a href="https://www.linkedin.com/in/mingyuekd/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin size={17} /></a>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github size={17} /></a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Instagram size={17} /></a>
+              <a href="https://www.salesforce.com/trailblazer/mingyuekd" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><SalesforceIcon size={17} /></a>
               <a href="mailto:mingyued@usc.edu" className="text-muted-foreground hover:text-primary transition-colors"><Mail size={17} /></a>
             </div>
           </div>
@@ -40,7 +42,7 @@ const Footer = () => {
         </div>
         <div className="mt-16 pt-8 border-t border-border">
           <p className="text-xs text-muted-foreground/60 font-sans">
-            © {new Date().getFullYear()} Katherine Ding
+            © {new Date().getFullYear()} Mingyue (Katherine) Ding
           </p>
         </div>
       </div>

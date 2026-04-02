@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Linkedin, Github, Instagram, Mail } from "lucide-react";
 import Layout from "@/components/Layout";
+import SalesforceIcon from "@/components/SalesforceIcon";
 import heroBg from "@/assets/hero-bg.jpg";
 import portrait from "@/assets/portrait.jpg";
 import projectData from "@/assets/project-data.jpg";
@@ -23,7 +24,7 @@ const Index = () => {
         <div className="absolute inset-0">
           <img src={heroBg} alt="Coastal city at golden hour" width={1920} height={1080} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-transparent" />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.95), rgba(217,215,228,0.6))' }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="max-w-3xl">
@@ -31,12 +32,12 @@ const Index = () => {
               Policy · Data · Spatial Storytelling
             </p>
             <h1 className="font-editorial text-5xl md:text-7xl lg:text-8xl text-foreground leading-[1.05] mb-8 opacity-0 animate-fade-in-up animate-delay-100">
-              Researching places,{" "}
-              <em className="text-primary not-italic">people</em>, and policy.
+              Bridging finance, policy, and impact — through data, cities, and{" "}
+              <em className="text-primary not-italic">systems thinking</em>.
             </h1>
             <div className="w-16 h-[1.5px] bg-primary mb-8 opacity-0 animate-fade-in animate-delay-200" />
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl opacity-0 animate-fade-in-up animate-delay-300">
-              I'm Katherine Ding — a public policy researcher and spatial storyteller based in Los Angeles.
+              I'm Mingyue (Katherine) Ding — a public policy researcher and spatial storyteller based in Los Angeles.
               I combine economic analysis, GIS mapping, and editorial writing to understand how cities work.
             </p>
             <div className="flex flex-wrap items-center gap-5 opacity-0 animate-fade-in-up animate-delay-400">
@@ -51,6 +52,7 @@ const Index = () => {
               <a href="https://www.linkedin.com/in/mingyuekd/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin size={17} /></a>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github size={17} /></a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Instagram size={17} /></a>
+              <a href="https://www.salesforce.com/trailblazer/mingyuekd" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><SalesforceIcon size={17} /></a>
               <a href="mailto:mingyued@usc.edu" className="text-muted-foreground hover:text-primary transition-colors"><Mail size={17} /></a>
             </div>
           </div>
@@ -63,8 +65,15 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-5 lg:col-start-1">
               <div className="relative">
-                <img src={portrait} alt="Katherine Ding" width={600} height={750} className="w-full aspect-[4/5] object-cover" />
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-primary/20" />
+                <img src={portrait} alt="Mingyue (Katherine) Ding" width={500} height={625} className="w-full max-w-[400px] aspect-[4/5] object-cover" />
+                <div className="absolute -bottom-8 right-0 lg:-right-8 w-48 h-36 overflow-hidden opacity-80">
+                  <img src={cityBeijing} alt="Beijing — UN Resident Coordinator's Office, China" width={300} height={200} className="w-full h-full object-cover" />
+                </div>
+                <div className="absolute -bottom-10 -right-2 lg:-right-10 w-20 h-20 border-2 border-primary/15" />
+                <div className="mt-14 space-y-1">
+                  <p className="text-xs text-muted-foreground font-sans">Beijing — UN Resident Coordinator's Office, China</p>
+                  <p className="text-xs text-muted-foreground font-sans">Los Angeles — current base</p>
+                </div>
               </div>
             </div>
             <div className="lg:col-span-6 lg:col-start-7">

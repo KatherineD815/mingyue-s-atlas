@@ -6,60 +6,60 @@
 
 @layer base {
   :root {
-    /* Morandi-inspired warm palette */
-    --background: 37 33% 95%;
-    --foreground: 220 15% 18%;
+    /* Dusty lavender + coastal palette */
+    --background: 25 22% 95%;
+    --foreground: 30 6% 23%;
 
-    --card: 37 30% 97%;
-    --card-foreground: 220 15% 18%;
+    --card: 25 20% 97%;
+    --card-foreground: 30 6% 23%;
 
-    --popover: 37 30% 97%;
-    --popover-foreground: 220 15% 18%;
+    --popover: 25 20% 97%;
+    --popover-foreground: 30 6% 23%;
 
-    --primary: 150 12% 42%;
-    --primary-foreground: 37 33% 97%;
+    --primary: 280 8% 40%;
+    --primary-foreground: 25 22% 97%;
 
-    --secondary: 200 18% 82%;
-    --secondary-foreground: 220 15% 22%;
+    --secondary: 260 12% 88%;
+    --secondary-foreground: 280 8% 28%;
 
-    --muted: 30 18% 92%;
-    --muted-foreground: 220 10% 46%;
+    --muted: 270 10% 93%;
+    --muted-foreground: 40 4% 42%;
 
-    --accent: 320 12% 68%;
-    --accent-foreground: 220 15% 18%;
+    --accent: 280 10% 68%;
+    --accent-foreground: 30 6% 23%;
 
     --destructive: 0 60% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 30 15% 88%;
-    --input: 30 15% 88%;
-    --ring: 150 12% 42%;
+    --border: 270 8% 88%;
+    --input: 270 8% 88%;
+    --ring: 280 8% 40%;
 
     --radius: 0.5rem;
 
     /* Extended palette */
-    --sage: 150 12% 42%;
-    --sage-light: 150 15% 93%;
-    --dusty-blue: 200 18% 72%;
-    --dusty-blue-light: 200 22% 94%;
-    --mauve: 320 12% 68%;
-    --mauve-light: 320 18% 95%;
-    --blush: 15 25% 93%;
-    --taupe: 25 10% 55%;
-    --ivory: 37 33% 97%;
-    --warm-gray: 25 8% 40%;
-    --coastal: 195 20% 88%;
-    --morning-haze: 240 12% 94%;
+    --sage: 270 8% 40%;
+    --sage-light: 270 14% 95%;
+    --dusty-blue: 210 18% 76%;
+    --dusty-blue-light: 210 20% 94%;
+    --mauve: 280 10% 68%;
+    --mauve-light: 270 16% 95%;
+    --blush: 270 12% 93%;
+    --taupe: 280 6% 50%;
+    --ivory: 25 22% 97%;
+    --warm-gray: 280 6% 40%;
+    --coastal: 210 18% 88%;
+    --morning-haze: 260 12% 94%;
 
     /* Sidebar */
-    --sidebar-background: 37 30% 96%;
-    --sidebar-foreground: 220 15% 25%;
-    --sidebar-primary: 150 12% 42%;
-    --sidebar-primary-foreground: 37 33% 97%;
-    --sidebar-accent: 30 18% 92%;
-    --sidebar-accent-foreground: 220 15% 18%;
-    --sidebar-border: 30 15% 88%;
-    --sidebar-ring: 150 12% 42%;
+    --sidebar-background: 25 20% 96%;
+    --sidebar-foreground: 30 6% 25%;
+    --sidebar-primary: 280 8% 40%;
+    --sidebar-primary-foreground: 25 22% 97%;
+    --sidebar-accent: 270 10% 93%;
+    --sidebar-accent-foreground: 30 6% 23%;
+    --sidebar-border: 270 8% 88%;
+    --sidebar-ring: 280 8% 40%;
 
     /* Typography */
     --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
@@ -67,9 +67,9 @@
     --font-editorial: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
 
     /* Shadows */
-    --shadow-soft: 0 2px 15px -3px hsl(25 10% 50% / 0.08);
-    --shadow-card: 0 4px 20px -5px hsl(25 10% 50% / 0.1);
-    --shadow-elevated: 0 8px 30px -8px hsl(25 10% 50% / 0.15);
+    --shadow-soft: 0 2px 15px -3px hsl(270 10% 50% / 0.08);
+    --shadow-card: 0 4px 20px -5px hsl(270 10% 50% / 0.1);
+    --shadow-elevated: 0 8px 30px -8px hsl(270 10% 50% / 0.15);
   }
 }
 
@@ -171,21 +171,21 @@ a, button {
 .animate-delay-500 { animation-delay: 0.5s; }
 .animate-delay-600 { animation-delay: 0.6s; }
 
-/* Atmospheric gradients */
+/* Atmospheric gradients — lavender + coastal */
 .gradient-warm-neutral {
-  background: linear-gradient(180deg, hsl(37 33% 95%) 0%, hsl(30 20% 93%) 100%);
+  background: linear-gradient(180deg, hsl(25 22% 95%) 0%, hsl(270 14% 95%) 100%);
 }
 .gradient-to-mauve {
-  background: linear-gradient(180deg, hsl(37 33% 95%) 0%, hsl(320 18% 95%) 100%);
+  background: linear-gradient(180deg, hsl(25 22% 95%) 0%, hsl(270 16% 95%) 100%);
 }
 .gradient-to-coastal {
-  background: linear-gradient(180deg, hsl(320 18% 95%) 0%, hsl(200 22% 94%) 100%);
+  background: linear-gradient(180deg, hsl(270 16% 95%) 0%, hsl(210 20% 94%) 100%);
 }
 .gradient-to-haze {
-  background: linear-gradient(180deg, hsl(200 22% 94%) 0%, hsl(240 12% 94%) 100%);
+  background: linear-gradient(180deg, hsl(210 20% 94%) 0%, hsl(260 12% 94%) 100%);
 }
 .gradient-editorial {
-  background: linear-gradient(135deg, hsl(37 33% 96%) 0%, hsl(150 15% 93%) 50%, hsl(200 22% 94%) 100%);
+  background: linear-gradient(135deg, hsl(25 22% 96%) 0%, hsl(270 14% 95%) 50%, hsl(210 20% 94%) 100%);
 }
 
 /* Soft overlay for images */
@@ -193,7 +193,7 @@ a, button {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, hsl(25 20% 50% / 0.08) 0%, transparent 60%);
+  background: linear-gradient(135deg, hsl(270 12% 50% / 0.08) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -227,24 +227,24 @@ a, button {
   background: linear-gradient(180deg, hsl(var(--sage)), hsl(var(--mauve)));
 }
 
-/* Tag color variants */
+/* Tag color variants — lavender system */
 .tag-sage {
-  background: hsl(150 15% 93%);
-  color: hsl(150 12% 38%);
+  background: hsl(270 14% 93%);
+  color: hsl(280 8% 38%);
 }
 .tag-dusty-blue {
-  background: hsl(200 22% 92%);
-  color: hsl(200 18% 42%);
+  background: hsl(210 20% 92%);
+  color: hsl(210 18% 42%);
 }
 .tag-mauve {
-  background: hsl(320 18% 93%);
-  color: hsl(320 12% 48%);
+  background: hsl(280 14% 93%);
+  color: hsl(280 10% 45%);
 }
 .tag-blush {
-  background: hsl(15 25% 92%);
-  color: hsl(15 20% 45%);
+  background: hsl(270 12% 92%);
+  color: hsl(270 10% 42%);
 }
 .tag-coastal {
-  background: hsl(195 20% 90%);
-  color: hsl(195 18% 40%);
+  background: hsl(210 18% 90%);
+  color: hsl(210 16% 40%);
 }
