@@ -12,12 +12,10 @@ import landscape1 from "@/assets/landscape-1.jpg";
 import cityMilan from "@/assets/city-milan.jpg";
 import projectUn from "@/assets/project-un.jpg";
 
-const tagOptions = ["All", "Travel", "Cities", "Policy", "Hiking", "Reflections", "Maps", "Photography"];
+const tagOptions = ["All", "Travel", "Hiking", "Reflections", "Maps", "Photography"];
 
 const tagColorMap: Record<string, string> = {
   Travel: "tag-blush",
-  Cities: "tag-coastal",
-  Policy: "tag-sage",
   Hiking: "tag-dusty-blue",
   Reflections: "tag-mauve",
   Maps: "tag-dusty-blue",
