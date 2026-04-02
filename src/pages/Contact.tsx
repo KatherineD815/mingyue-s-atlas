@@ -7,8 +7,8 @@ const Contact = () => {
     <Layout>
       <section className="min-h-[85vh] flex items-center gradient-to-coastal">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 py-32 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-            <div className="lg:col-span-7">
+         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <div className="lg:col-span-8">
               <span className="text-xs font-sans font-medium tracking-[0.3em] uppercase text-primary mb-6 block">Get in Touch</span>
               <h1 className="font-editorial text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
                 Let's Connect
