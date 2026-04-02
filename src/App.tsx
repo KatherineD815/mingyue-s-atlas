@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Journal from "./pages/Journal";
+import PersonalStory from "./pages/PersonalStory";
+import NotesThinking from "./pages/NotesThinking";
 import CityAtlas from "./pages/CityAtlas";
 import Photography from "./pages/Photography";
 import Contact from "./pages/Contact";
@@ -25,6 +27,8 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/journal" element={<Journal />} />
+          <Route path="/personal-story" element={<PersonalStory />} />
+          <Route path="/notes" element={<NotesThinking />} />
           <Route path="/city-atlas" element={<CityAtlas />} />
           <Route path="/photography" element={<Photography />} />
           <Route path="/contact" element={<Contact />} />
