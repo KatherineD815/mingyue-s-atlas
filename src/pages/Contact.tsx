@@ -15,9 +15,10 @@ const Contact = () => {
               </h1>
               <div className="w-12 h-[1.5px] bg-primary mb-8" />
               <p className="text-muted-foreground leading-[1.8] mb-4">
-                I'm currently open to roles in policy research, data analysis, spatial analysis, strategy,
-                and mission-driven organizations. I'd love to hear from you — whether it's about a role,
-                a collaboration, or just a shared interest in cities, maps, and stories.
+                I'm currently exploring opportunities across strategy, finance, policy, and data-driven roles, where analytical thinking and real-world impact intersect.
+              </p>
+              <p className="text-muted-foreground leading-[1.8] mb-4">
+                I'm particularly interested in work that connects economic insight, data analysis, and decision-making — whether in consulting, international organizations, or the private sector. I'd love to connect, whether it's about a role, a collaboration, or a shared interest in markets, cities, and global development.
               </p>
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-10">
                 <MapPin size={14} className="text-primary" /> Los Angeles, CA
