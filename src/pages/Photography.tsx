@@ -17,7 +17,7 @@ import portrait from "@/assets/portrait.jpg";
 const categories = ["All", "Travel", "Cities", "Landscapes", "Street Moments"];
 
 const photos = [
-  { src: heroBg, alt: "Coastal city aerial", category: "Cities" },
+  { src: coastline, alt: "Coastal cliffs at golden hour", category: "Landscapes" },
   { src: landscape1, alt: "Mountain lake sunset", category: "Landscapes" },
   { src: cityLA, alt: "Los Angeles neighborhoods", category: "Cities" },
   { src: hiking, alt: "Misty mountain trail", category: "Landscapes" },
