@@ -28,33 +28,41 @@ const Index = () => {
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full py-32">
           <div className="max-w-3xl">
-            <p className="text-[10px] font-sans font-normal tracking-[0.35em] uppercase text-primary/60 mb-8 opacity-0 animate-fade-in-up">
+            <p className="text-[10px] font-sans font-normal tracking-[0.35em] uppercase text-primary/70 mb-6 opacity-0 animate-fade-in-up">
               investment · data analysis · spatial storytelling
             </p>
-            <p className="font-editorial text-lg md:text-xl text-muted-foreground mb-3 opacity-0 animate-fade-in-up animate-delay-100">
+            <p className="font-editorial text-lg md:text-xl text-muted-foreground mb-2 opacity-0 animate-fade-in-up animate-delay-100">
               Hello, I'm
             </p>
-            <h1 className="font-editorial text-5xl md:text-7xl lg:text-[5.5rem] text-foreground leading-[1.05] mb-6 opacity-0 animate-fade-in-up animate-delay-200">
+            <h1 className="font-editorial text-5xl md:text-7xl lg:text-[5.5rem] text-foreground leading-[1.05] mb-4 opacity-0 animate-fade-in-up animate-delay-200">
               Mingyue (Katherine) Ding
             </h1>
-            <p className="text-base md:text-lg font-sans text-muted-foreground leading-relaxed max-w-xl mb-10 opacity-0 animate-fade-in-up animate-delay-300">
+            <p className="text-base md:text-lg font-sans text-muted-foreground leading-relaxed max-w-xl mb-5 opacity-0 animate-fade-in-up animate-delay-300">
               Bridging finance, policy, and impact — through data, cities, and systems thinking.
             </p>
-            <div className="w-16 h-[1.5px] bg-primary/40 mb-10 opacity-0 animate-fade-in animate-delay-300" />
+            <p className="text-sm font-sans leading-[1.85] max-w-[62ch] mb-4 opacity-0 animate-fade-in-up animate-delay-300" style={{ color: '#5E5A5A' }}>
+              I'm Mingyue (Katherine) Ding — a graduate with a background across public policy, finance, and data. I work at the intersection of strategy, investment thinking, and spatial analysis, combining analytical rigor with real-world perspective.
+            </p>
+            <p className="text-xs font-sans tracking-wide text-primary/70 mb-5 opacity-0 animate-fade-in-up animate-delay-300">
+              📍 Los Angeles · Open to global opportunities
+            </p>
+            <div className="w-16 h-[1.5px] mb-8 opacity-0 animate-fade-in animate-delay-300" style={{ backgroundColor: 'rgba(143,127,159,0.3)' }} />
             <div className="flex flex-wrap items-center gap-5 opacity-0 animate-fade-in-up animate-delay-400">
-              <Link to="/portfolio" className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground text-sm font-sans font-medium tracking-wide hover:bg-accent transition-colors shadow-sm">
+              <Link to="/portfolio" className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-sans font-medium tracking-wide transition-colors" style={{ backgroundColor: '#8F7F9F', color: '#F6F2EF', boxShadow: '0 2px 8px -2px rgba(143,127,159,0.35)' }}
+                onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#A899A8')}
+                onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#8F7F9F')}>
                 View Portfolio
               </Link>
               <Link to="/about" className="inline-flex items-center gap-2 text-sm font-sans text-foreground hover:text-primary transition-colors tracking-wide">
                 About Me <ArrowRight size={14} />
               </Link>
             </div>
-            <div className="flex items-center gap-6 mt-14 opacity-0 animate-fade-in animate-delay-500">
-              <a href="https://www.linkedin.com/in/mingyuekd/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin size={17} /></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github size={17} /></a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Instagram size={17} /></a>
-              <a href="https://www.salesforce.com/trailblazer/mingyuekd" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><SalesforceIcon size={17} /></a>
-              <a href="mailto:mingyued@usc.edu" className="text-muted-foreground hover:text-primary transition-colors"><Mail size={17} /></a>
+            <div className="flex items-center gap-5 mt-12 opacity-0 animate-fade-in animate-delay-500">
+              <a href="https://www.linkedin.com/in/mingyuekd/" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-primary transition-colors"><Linkedin size={17} /></a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-primary transition-colors"><Github size={17} /></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-primary transition-colors"><Instagram size={17} /></a>
+              <a href="https://www.salesforce.com/trailblazer/mingyuekd" target="_blank" rel="noopener noreferrer" className="text-foreground/50 hover:text-primary transition-colors"><SalesforceIcon size={17} /></a>
+              <a href="mailto:mingyued@usc.edu" className="text-foreground/50 hover:text-primary transition-colors"><Mail size={17} /></a>
             </div>
           </div>
         </div>
