@@ -7,6 +7,8 @@ const navLinks = [
   { to: "/about", label: "About" },
   { to: "/portfolio", label: "Portfolio" },
   { to: "/journal", label: "Journal" },
+  { to: "/personal-story", label: "Personal Story" },
+  { to: "/notes", label: "Notes" },
   { to: "/city-atlas", label: "City Atlas" },
   { to: "/photography", label: "Photography" },
   { to: "/contact", label: "Contact" },

@@ -1,23 +1,17 @@
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import journalCover from "@/assets/journal-cover.jpg";
-import cityLA from "@/assets/city-la.jpg";
 import cityBeijing from "@/assets/city-beijing.jpg";
 import cityMexico from "@/assets/city-mexico.jpg";
 import citySF from "@/assets/city-sf.jpg";
 import hiking from "@/assets/hiking.jpg";
 import landscape1 from "@/assets/landscape-1.jpg";
-import cityMilan from "@/assets/city-milan.jpg";
 import projectUn from "@/assets/project-un.jpg";
 
-const tagOptions = ["All", "Travel", "Cities", "Policy", "Hiking", "Reflections", "Maps", "Photography"];
+const tagOptions = ["All", "Travel", "Hiking", "Reflections", "Maps", "Photography"];
 
 const tagColorMap: Record<string, string> = {
   Travel: "tag-blush",
-  Cities: "tag-coastal",
-  Policy: "tag-sage",
   Hiking: "tag-dusty-blue",
   Reflections: "tag-mauve",
   Maps: "tag-dusty-blue",
@@ -29,23 +23,9 @@ const articles = [
     title: "Strolls Through the San Francisco Streets",
     excerpt: "Wandering through fog-laden hills, discovering quiet neighborhoods that define the city beyond the tourist trail — cable cars, steep stairways, and hidden garden parks.",
     date: "March 2026",
-    tags: ["Cities", "Travel"],
+    tags: ["Travel"],
     image: citySF,
     featured: true,
-  },
-  {
-    title: "What the Data Reveals About LA's Housing Divide",
-    excerpt: "Notes from my research at the USC Lusk Center on how census tract data tells the story of inequality, displacement, and community resilience across Los Angeles.",
-    date: "February 2026",
-    tags: ["Policy", "Cities", "Maps"],
-    image: cityLA,
-  },
-  {
-    title: "Mapping Environmental Justice in Redlined LA",
-    excerpt: "How spatial analysis reveals the lasting environmental consequences of historical redlining — and what it means for policy today.",
-    date: "January 2026",
-    tags: ["Policy", "Maps"],
-    image: journalCover,
   },
   {
     title: "Favorite Trails and Open Spaces Near Los Angeles",
@@ -58,28 +38,21 @@ const articles = [
     title: "Mexico City: Markets, Murals, and Morning Light",
     excerpt: "Exploring the layers of Mexico City — from the ancient footprints of Teotihuacán to the vibrant street markets of Roma Norte and the quiet beauty of Coyoacán.",
     date: "November 2025",
-    tags: ["Travel", "Cities", "Photography"],
+    tags: ["Travel", "Photography"],
     image: cityMexico,
   },
   {
     title: "Reflections from the United Nations in Beijing",
     excerpt: "On writing speeches for diplomats, navigating cross-cultural policy work, and finding meaning in the daily rhythms of international development.",
     date: "October 2025",
-    tags: ["Reflections", "Policy"],
+    tags: ["Reflections"],
     image: projectUn,
-  },
-  {
-    title: "Milan and the Winter Olympics: Infrastructure as Legacy",
-    excerpt: "Notes from my time studying Olympic PPP projects with Bocconi — how infrastructure investment shapes a city's identity long after the closing ceremony.",
-    date: "September 2025",
-    tags: ["Cities", "Policy", "Travel"],
-    image: cityMilan,
   },
   {
     title: "Beijing Through the Seasons",
     excerpt: "A year of watching the capital shift — from the frozen Houhai Lake to the pink blossoms of Yuyuantan Park, and everything the hutongs hold between.",
     date: "August 2025",
-    tags: ["Travel", "Cities", "Photography"],
+    tags: ["Travel", "Photography"],
     image: cityBeijing,
   },
   {
