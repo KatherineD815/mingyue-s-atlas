@@ -169,7 +169,7 @@ const Index = () => {
       </section>
 
       {/* Selected Writing — featured + secondary layout */}
-      <section className="py-32">
+      <section className="py-32 gradient-to-haze">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-end justify-between mb-16">
             <div>
