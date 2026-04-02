@@ -37,19 +37,19 @@
 
     --radius: 0.5rem;
 
-    /* Extended palette — stronger purple identity */
-    --sage: 270 12% 56%;
-    --sage-light: 268 16% 94%;
+    /* Extended palette — richer Morandi purple */
+    --sage: 270 14% 56%;
+    --sage-light: 268 16% 92%;
     --dusty-blue: 210 18% 76%;
-    --dusty-blue-light: 210 20% 93%;
-    --mauve: 275 14% 65%;
-    --mauve-light: 268 18% 94%;
-    --blush: 265 14% 91%;
-    --taupe: 270 10% 48%;
-    --ivory: 25 22% 97%;
-    --warm-gray: 270 10% 42%;
-    --coastal: 210 18% 86%;
-    --morning-haze: 260 14% 92%;
+    --dusty-blue-light: 210 20% 91%;
+    --mauve: 280 16% 62%;
+    --mauve-light: 270 18% 90%;
+    --blush: 265 16% 88%;
+    --taupe: 270 12% 45%;
+    --ivory: 25 22% 96%;
+    --warm-gray: 270 12% 40%;
+    --coastal: 210 18% 84%;
+    --morning-haze: 260 16% 90%;
 
     /* Sidebar */
     --sidebar-background: 25 20% 96%;
