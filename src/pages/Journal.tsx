@@ -1,15 +1,11 @@
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import journalCover from "@/assets/journal-cover.jpg";
-import cityLA from "@/assets/city-la.jpg";
 import cityBeijing from "@/assets/city-beijing.jpg";
 import cityMexico from "@/assets/city-mexico.jpg";
 import citySF from "@/assets/city-sf.jpg";
 import hiking from "@/assets/hiking.jpg";
 import landscape1 from "@/assets/landscape-1.jpg";
-import cityMilan from "@/assets/city-milan.jpg";
 import projectUn from "@/assets/project-un.jpg";
 
 const tagOptions = ["All", "Travel", "Hiking", "Reflections", "Maps", "Photography"];
