@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/mingyue-s-atlas/",
+  
   server: {
     host: "::",
     port: 8080,
