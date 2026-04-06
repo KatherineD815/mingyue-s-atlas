@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import cityBeijing from "@/assets/city-beijing.jpg";
 import cityMexico from "@/assets/city-mexico.jpg";
