@@ -12,6 +12,9 @@ import landscape1 from "@/assets/landscape-1.jpg";
 import landscape2 from "@/assets/landscape-2.jpg";
 import coastline from "@/assets/coastline.jpg";
 import portrait from "@/assets/portrait.jpg";
+import heroOption1 from "@/assets/hero-option-1.jpg";
+import heroOption2 from "@/assets/hero-option-2.jpg";
+import heroOption3 from "@/assets/hero-option-3.jpg";
 import projectUn from "@/assets/project-un.jpg";
 
 const tagColorMap: Record<string, string> = {
@@ -74,7 +77,7 @@ const timelineImages = [
   landscape2, coastline, cityBeijing, landscape1, hiking,
   cityBeijing, landscape2, coastline, cityBeijing, hiking,
   landscape1, cityMexico, coastline, cityMilan, hiking,
-  landscape2, cityBeijing, cityLA, citySF, portrait, portrait,
+  landscape2, cityBeijing, cityLA, citySF, heroOption2, heroOption1,
 ];
 
 const timelineEntries = Array.from({ length: 26 }, (_, i) => {
