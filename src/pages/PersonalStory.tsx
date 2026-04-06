@@ -169,6 +169,23 @@ const PersonalStory = () => {
               ))}
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 via-transparent to-foreground/10 pointer-events-none" />
+              {/* Navigation Arrows */}
+              {activeIndex > 0 && (
+                <button
+                  onClick={() => setActiveIndex(activeIndex - 1)}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 z-20 text-white/40 hover:text-white/80 transition-colors duration-300 focus:outline-none"
+                >
+                  <ChevronLeft size={36} strokeWidth={1.5} />
+                </button>
+              )}
+              {activeIndex < timelineEntries.length - 1 && (
+                <button
+                  onClick={() => setActiveIndex(activeIndex + 1)}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 z-20 text-white/40 hover:text-white/80 transition-colors duration-300 focus:outline-none"
+                >
+                  <ChevronRight size={36} strokeWidth={1.5} />
+                </button>
+              )}
               {/* Caption */}
               <div className="absolute bottom-6 left-8 z-10">
                 <p className="text-sm font-sans text-white/80 tracking-wide">
