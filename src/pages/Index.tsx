@@ -37,7 +37,7 @@ const Index = () => {
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full pt-4 pb-20">
           <div className="max-w-2xl">
-            <p className="text-[10px] font-sans font-normal tracking-[0.35em] uppercase mb-6 animate-fade-in-up" style={{ color: 'rgba(122,111,126,0.7)' }}>
+            <p className="text-[10px] font-sans font-normal tracking-[0.35em] uppercase mb-3 animate-fade-in-up" style={{ color: 'rgba(122,111,126,0.7)' }}>
               investment · data analysis · spatial storytelling
             </p>
 
