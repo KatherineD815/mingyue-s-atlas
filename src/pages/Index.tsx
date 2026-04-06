@@ -76,20 +76,19 @@ const Index = () => {
       </section>
 
       {/* About teaser — asymmetric editorial layout */}
-      <section className="py-32 gradient-warm-neutral">
+      <section className="py-24 lg:py-32 gradient-warm-neutral">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-start">
             <div className="lg:col-span-5 lg:col-start-1">
-              <div className="relative">
+              <div className="relative pb-20">
                 <img src={portrait} alt="Mingyue (Katherine) Ding" width={500} height={625} className="w-full max-w-[360px] aspect-[4/5] object-cover" />
-                <div className="absolute -bottom-10 right-0 lg:-right-10 w-56 h-44 overflow-hidden opacity-85 shadow-md">
+                <div className="absolute -bottom-4 right-4 lg:right-0 w-52 h-40 overflow-hidden opacity-85 shadow-md">
                   <img src={cityBeijing} alt="Beijing" width={300} height={200} className="w-full h-full object-cover" />
                 </div>
-                <div className="absolute -bottom-12 -right-2 lg:-right-12 w-24 h-24 border-2 border-primary/15" />
-                <div className="mt-16">
-                  <p className="text-xs text-muted-foreground font-sans">📍 Beijing → Los Angeles</p>
-                  <p className="text-xs text-muted-foreground/70 font-sans mt-1">Open to Global Opportunities · NY, SF, DC, LA · HK, SH, BJ</p>
-                </div>
+              </div>
+              <div className="mt-4">
+                <p className="text-xs text-muted-foreground font-sans">📍 Beijing → Los Angeles</p>
+                <p className="text-xs text-muted-foreground/70 font-sans mt-1">Open to Global Opportunities · NY, SF, DC, LA · HK, SH, BJ</p>
               </div>
             </div>
             <div className="lg:col-span-6 lg:col-start-7">
