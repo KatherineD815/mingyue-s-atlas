@@ -77,7 +77,7 @@ const timelineImages = [
   landscape2, coastline, cityBeijing, landscape1, hiking,
   cityBeijing, landscape2, coastline, cityBeijing, hiking,
   landscape1, cityMexico, coastline, cityMilan, hiking,
-  landscape2, cityBeijing, cityLA, citySF, portrait, portrait,
+  landscape2, cityBeijing, cityLA, citySF, heroOption2, heroOption1,
 ];
 
 const timelineEntries = Array.from({ length: 26 }, (_, i) => {
