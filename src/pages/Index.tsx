@@ -24,13 +24,13 @@ const Index = () => {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-background" />
           <div className="absolute top-0 right-0 w-[55%] h-full hidden lg:block">
-            <img src={heroBg} alt="AIIB Annual Meeting" width={1920} height={1080} className="w-full h-full object-cover" style={{ objectPosition: '85% 50%' }} />
+            <img src={heroBg} alt="AIIB Annual Meeting" width={1920} height={1080} className="w-full h-full object-cover" style={{ objectPosition: '90% 50%' }} />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,1) 0%, rgba(246,242,239,0.95) 25%, rgba(246,242,239,0.5) 45%, rgba(217,215,228,0.15) 60%, transparent 100%)' }} />
           </div>
           {/* Mobile: show image as full background */}
           <div className="absolute inset-0 lg:hidden">
-            <img src={heroBg} alt="AIIB Annual Meeting" width={1920} height={1080} className="w-full h-full object-cover" style={{ objectPosition: '60% center' }} />
+            <img src={heroBg} alt="AIIB Annual Meeting" width={1920} height={1080} className="w-full h-full object-cover" style={{ objectPosition: '85% center' }} />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(246,242,239,0.92), rgba(217,215,228,0.6))' }} />
           </div>
