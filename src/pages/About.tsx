@@ -65,12 +65,13 @@ const About = () => {
             <div className="lg:col-span-5">
               <div className="relative sticky top-24">
                 <img src={portrait} alt="Mingyue (Katherine) Ding" width={500} height={625} className="w-full max-w-[340px] aspect-[4/5] object-cover" />
-                <div className="absolute -bottom-8 right-0 lg:-right-6 w-44 h-32 overflow-hidden opacity-80 shadow-md">
+                <div className="absolute -bottom-10 right-0 lg:-right-8 w-56 h-44 overflow-hidden opacity-85 shadow-md">
                   <img src={cityBeijing} alt="Beijing" width={300} height={200} className="w-full h-full object-cover" />
                 </div>
-                <div className="absolute -bottom-10 -right-2 lg:-right-8 w-20 h-20 border-2 border-primary/15" />
-                <div className="mt-14">
-                  <p className="text-xs text-muted-foreground font-sans">📍 Los Angeles</p>
+                <div className="absolute -bottom-12 -right-2 lg:-right-10 w-24 h-24 border-2 border-primary/15" />
+                <div className="mt-16">
+                  <p className="text-xs text-muted-foreground font-sans">📍 Beijing → Los Angeles</p>
+                  <p className="text-xs text-muted-foreground/70 font-sans mt-1">Open to Global Opportunities · NY, SF, DC, LA · HK, SH, BJ</p>
                 </div>
                 <div className="flex items-center gap-5 mt-6">
                   <a href="https://www.linkedin.com/in/mingyuekd/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin size={16} /></a>
