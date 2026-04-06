@@ -78,28 +78,30 @@ const timelineImages = [
 ];
 
 const timelineEntries = Array.from({ length: 26 }, (_, i) => {
-  const year = 2001 + i;
+  const year = 2026 - i;
+  const imgIndex = year - 2001;
   const labels: Record<number, string> = {
     2001: "Born", 2002: "First steps", 2003: "Early days", 2004: "Childhood",
-    2005: "Early memories", 2006: "School begins", 2007: "Growing", 2008: "Discovery",
+    2005: "Early memories", 2006: "School begins", 2007: "Primary school", 2008: "Discovery",
     2009: "Curiosity", 2010: "New chapter", 2011: "Exploration", 2012: "Middle school",
     2013: "Transitions", 2014: "Beijing", 2015: "High school", 2016: "Ambitions",
-    2017: "First travels", 2018: "Broadening", 2019: "University", 2020: "Resilience",
+    2017: "New perspectives", 2018: "Broadening", 2019: "University", 2020: "Resilience",
     2021: "Adventures", 2022: "Growth", 2023: "California", 2024: "Explorations",
     2025: "Building", 2026: "Now",
   };
   const captions: Record<number, string> = {
     2001: "The beginning", 2005: "Childhood fragments", 2010: "By the water",
-    2014: "Beijing years", 2017: "Discovering the world", 2019: "Milan & learning",
+    2014: "Beijing years", 2017: "Widening the lens", 2019: "Milan & learning",
     2021: "Into the mountains", 2023: "Los Angeles chapter", 2024: "San Francisco walks",
     2026: "Present day",
   };
   return {
     year: String(year),
     label: labels[year] || "",
-    image: timelineImages[i],
+    image: timelineImages[imgIndex],
     caption: captions[year] || labels[year] || "",
   };
+
 });
 
 /* ── Personal Story Essays ── */
