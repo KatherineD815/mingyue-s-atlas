@@ -156,7 +156,7 @@ const TimelineItem = ({ entry, isActive, onClick }: { entry: typeof timelineEntr
 );
 
 const Journal = () => {
-  const [topTab, setTopTab] = useState<TopTab>("All");
+  const [topTab, setTopTab] = useState<TopTab>("Personal Story");
   const [notesTag, setNotesTag] = useState("All");
   const [activeTimelineIndex, setActiveTimelineIndex] = useState(0);
   const timelineRef = useRef<HTMLDivElement>(null);
